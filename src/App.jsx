@@ -1,18 +1,24 @@
 import React from "react"
+import { Route, Routes } from "react-router-dom"
 import "./App.css"
-import Body from "./Components/Body"
-import Community from "./Components/Community"
-import Header from "./Components/Header"
-import Landing from "./Components/Landing"
+
+import Form from "./Components/Form"
+import Home from "./Components/Home"
 
 function App() {
   return (
-    <div>
-      <Header />
-      <Landing />
-      <Community />
-      {/* <Body/> */}
-    </div>
+    // <div>
+    //   <Header />
+    //   {/* <Landing /> */}
+    //   <Community />
+    //   <Libraries />
+    //   <Footer />
+    // </div>
+
+    <Routes>
+      <Route path="/create-resource" element={<Form />} />
+      <Route path="/" element={<Home />} />
+    </Routes>
   )
 }
 

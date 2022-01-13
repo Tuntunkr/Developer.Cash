@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 .icon-container {
-  @apply flex justify-center items-center px-4 py-3 my-4 space-x-3 w-full rounded-lg bg-slate-800;
+  @apply flex justify-center items-center px-4 py-3 my-4 space-x-3 rounded-lg bg-slate-800;
 }
 
 .icon {
-  @apply w-8 h-8 text-black;
+  @apply w-7 h-7 text-white;
 }
 
 .card-text {
-  @apply text-xl font-semibold text-black;
+  @apply text-xl font-medium text-white;
 }

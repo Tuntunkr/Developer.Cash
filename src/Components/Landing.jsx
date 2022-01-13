@@ -6,17 +6,18 @@ import { IoIosCloud } from "react-icons/io"
 import { GiGraduateCap } from "react-icons/gi"
 
 import { useState } from "react"
+import { motion } from "framer-motion"
 
 const Landing = () => {
   const [searchInput, setSearchInput] = useState("")
   return (
-    <main className="flex flex-col justify-center items-center px-5 py-10">
+    <main className="flex flex-col justify-center items-center px-3 py-10 bg-[#181E2D] ">
       <h2 className="text-3xl text-center text-slate-500">
         &lt; Bitcoin Cash &gt;
       </h2>
-      <h3 className="my-10 text-2xl text-center text-emerald-600">
+      <motion.h3 className="my-10 text-2xl text-center text-emerald-600">
         Developers.Cash
-      </h3>
+      </motion.h3>
       <h3 className="text-lg font-semibold text-center text-black">
         Useful developer resources for building the internet of cash.
       </h3>
@@ -31,7 +32,7 @@ const Landing = () => {
           type="search"
           name="search"
           id=""
-          className="w-full h-12 border-none outline-none border0 outline-0 active:outline-0 active:border-0 focus:outline-0 focus:border-0 focus:outline-none focus:border-none"
+          className=" h-12 border-0 border-none outline-none outline-0 active:outline-0 active:border-0 focus:outline-0 focus:border-0 focus:outline-none focus:border-none"
           placeholder="search"
           value={searchInput}
           onChange={e => setSearchInput(e.target.value)}
@@ -41,7 +42,7 @@ const Landing = () => {
       </form>
 
       {/* cards */}
-      <div>
+      <div className="sm:flex sm:flex-wrap sm:items-center sm:space-x-5">
         <div className="icon-container">
           <ImUsers className="icon" />
           <h3 className="card-text">COMMUNITY</h3>
