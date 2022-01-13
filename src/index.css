@@ -13,3 +13,8 @@
 .card-text {
   @apply text-xl font-medium text-white;
 }
+
+/* form page */
+.input {
+  @apply border-slate-500 w-full h-10;
+}

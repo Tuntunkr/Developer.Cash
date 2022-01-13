@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-[#181E2D] p-5 sm:flex sm:items-center sm:justify-between">
+    <footer className="bg-[#181E2D] p-5 sm:flex sm:items-center sm:justify-between overflow-hidden">
       <section className="text-white space-y-5">
         <h3 className="text-xl font-light text-emerald-600">Note</h3>
         <h4>This catalog is still a work-in-progress.</h4>
